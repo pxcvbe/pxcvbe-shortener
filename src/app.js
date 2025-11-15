@@ -9,13 +9,14 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 
 // Routes
 app.use('/api/v1/url', urlRoutes);
 
 // Root
 app.get('/', (req, res) => {
-    res.send('🚀 URL Shortener API is running...');
+    res.sendFile(process.cwd() + '/public/index.html');
 });
 
 // Public short URL redirect (ex: http://localhost:5000/AbCd12)
