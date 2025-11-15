@@ -35,8 +35,6 @@ Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (Version 18 or higher)
 - [npm](https://www.npmjs.com/) (v9 or higher)
 
----
-
 ## Installation
 
 1. **Clone the repository**
@@ -284,7 +282,7 @@ npx prisma migrate deploy
 
 ### Prisma Studio
 
-`To view and edit database data:
+To view and edit database data:
 ```bash
 npx prisma studio
 ```
