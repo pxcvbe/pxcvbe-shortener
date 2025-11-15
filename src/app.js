@@ -25,4 +25,5 @@ app.get('/:shortCode', redirectUrl);
 // Start server
 app.listen(CONFIG.PORT, () => {
     console.log(`✓ Server running at ${CONFIG.BASE_URL}`);
+    console.log(`✓ PORT: ${CONFIG.PORT}`);
 });
