@@ -1,6 +1,26 @@
+/**
+ * URL controller module.
+ * 
+ * Exposes Express route handlers for creating, resolving, and listing
+ * shortened URLs.
+ * 
+ * @module controllers/url.controller
+ */
 import { createShortUrl, getOriginalUrl, getAllUrls } from "../services/url.service.js";
 import { CONFIG } from "../config/env.js";
 
+/**
+ * Handle request to create a new shortened URL.
+ * 
+ * Expects `originalUrl` in the request body and returns the generated
+ * short code and full short URL.
+ * 
+ * @async
+ * @function shortedUrl
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>}
+ */
 export const shortedUrl = async (req, res) => {
     try {
         const { originalUrl } = req.body;
@@ -16,6 +36,18 @@ export const shortedUrl = async (req, res) => {
     }
 };
 
+/**
+ * Redirect to the original URL for a given short code.
+ * 
+ * Reads the `shortCode` from route parameters, looks up the original URL,
+ * and issues a redirect if found.
+ * 
+ * @async
+ * @function redirectUrl
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>}
+ */
 export const redirectUrl = async (req, res) => {
     try {
         const { shortCode } = req.params;
@@ -32,6 +64,15 @@ export const redirectUrl = async (req, res) => {
     }
 };
 
+/**
+ * Return a list of all stored URLs with their metadata.
+ * 
+ * @async
+ * @function listUrls
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>}
+ */
 export const listUrls = async (req, res) => {
     try {
         const urls = await getAllUrls();

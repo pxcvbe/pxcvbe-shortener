@@ -1,3 +1,10 @@
+/**
+ * Entry point of the URL Shortener HTTP server.
+ * Sets up global middleware, API routes, static file serving, and
+ * the public redirect route for short URLs.
+ * 
+ * @module app
+ */
 import express from 'express';
 import cors from 'cors';
 import { CONFIG } from './config/env.js';
