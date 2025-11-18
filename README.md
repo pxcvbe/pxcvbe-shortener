@@ -296,3 +296,4 @@ npx prisma studio
 - `Built` with [Express.js](https://expressjs.com/).
 - Database `managed` with [Prisma](https://www.prisma.io/).
 - Short code generation `powered` by [nanoid](https://github.com/ai/nanoid).
+- `Documentation` code with [JSDoc](https://jsdoc.app/).
