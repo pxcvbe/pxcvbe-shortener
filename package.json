@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
-    "build": "npx prisma generate"
+    "build": "npx prisma generate",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,9 @@
     "express": "^5.1.0",
     "nanoid": "^5.1.6",
     "prisma": "^6.19.0"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^4.0.10",
+    "vitest": "^4.0.10"
   }
 }
