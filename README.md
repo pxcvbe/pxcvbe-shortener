@@ -293,7 +293,11 @@ npx prisma studio
 
 ## 🧪 Unit Testing
 
-This is the result unit testing with _[Vitest](https://vitest.dev/)_
+This is the result unit testing with _[Vitest](https://vitest.dev/)_ UI:
+
+```bash
+npx vitest --ui
+```
 
 <img width="1920" height="987" alt="vitest-screenshot-url-shortener" src="https://github.com/user-attachments/assets/2c05c8b8-a927-4185-b1e2-783d666b2f28" />
 
