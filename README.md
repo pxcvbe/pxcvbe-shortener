@@ -289,6 +289,12 @@ npx prisma studio
 
 ---
 
+## 🧪 Unit Testing with Vitest
+
+This is the result unit testing with _[Vitest](https://vitest.dev/)_
+
+---
+
 ### 「 ✦ Author ✦ 」
 
 - [pxcvbe](https://github.com/pxcvbe) / **Ivan Kurniawan**.
