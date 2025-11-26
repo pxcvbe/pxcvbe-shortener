@@ -303,6 +303,12 @@ npx vitest --ui
 
 ---
 
+## 📝 UML Sequence Diagram (Indonesian)
+
+![URLShortener](https://github.com/user-attachments/assets/46fed964-7fca-464d-878b-ae19d18fb0d3)
+
+---
+
 ### 「 ✦ Author ✦ 」
 
 - [pxcvbe](https://github.com/pxcvbe) / **Ivan Kurniawan**.
